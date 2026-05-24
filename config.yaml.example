@@ -1,0 +1,31 @@
+# VS Code Security Checker - Example Configuration
+# Copy to config.yaml and adjust as needed.
+# All settings are optional - omitting them uses the defaults shown here.
+
+# --- Path Overrides ---
+# Leave as null to auto-detect from the current platform.
+extensions_dir: null       # e.g. /home/user/.vscode/extensions
+settings_file: null        # e.g. /home/user/.config/Code/User/settings.json
+mcp_config_file: null      # e.g. /home/user/.config/Code/User/mcp.json
+
+# --- Scan Options ---
+check_cves: true                   # query OSV.dev for npm package vulnerabilities
+check_marketplace: true            # query VS Code Marketplace for deprecated/unverified flags
+check_github_advisories: true      # query GitHub Advisory Database
+
+# --- Network ---
+max_concurrent_api_requests: 5     # parallel CVE API requests (increase for faster scans)
+api_timeout_seconds: 10            # per-request timeout in seconds
+
+# --- Output ---
+output_dir: ./reports              # directory for JSON and Markdown report files
+severity_threshold: INFO           # minimum severity for console output (CRITICAL/HIGH/MEDIUM/LOW/INFO)
+
+# --- Thresholds ---
+stale_extension_days: 180             # flag extensions not updated in this many days
+
+# --- API Keys ---
+# github_token can also be set via the GITHUB_TOKEN environment variable.
+# Without a token: 60 GitHub API requests/hour (enough for ~60 extensions).
+# With a token:  5000 requests/hour.
+github_token: null

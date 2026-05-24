@@ -1,0 +1,142 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# VS Code Checker - generated outputs (keep folders, ignore data)
+reports/*
+!reports/.gitkeep
+*.json
+*.html
+
+# User config (contains local paths and tokens - do not commit)
+config.yaml
+
+# Extension export archives (keep folder, ignore contents)
+vscode-extensions-export/*
+!vscode-extensions-export/.gitkeep
+*.vsix
+
+# Environment files
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# vscode settings
+.vscode/
+settings.json
+
+# ── AI coding tools ────────────────────────────────────────────────────────────
+# Instructions, skills, hooks, memory, sessions, and config for all known
+# AI coding assistants. None of these belong in a public repository.
+
+# Claude Code (Anthropic)
+CLAUDE.md
+claude_local_settings.json
+.claude/
+
+# Codex CLI (OpenAI)
+CODEX.md
+AGENTS.md
+AGENTS.override.md
+.codex/
+.agents/
+
+# GitHub Copilot
+.github/copilot-instructions.md
+.github/instructions/
+.github/prompts/
+.copilot/
+
+# Gemini CLI (Google)
+GEMINI.md
+.gemini/
+
+# Antigravity v1 (Google) - uses .gemini/ (covered above)
+# Antigravity 2.0 (Google) - uses .agents/ (covered above)
+
+# Cursor
+.cursorrules
+.cursorignore
+.cursorindexingignore
+.cursor/
+
+# Windsurf / Codeium
+.windsurfrules
+.windsurfignore
+.windsurf/
+.codeium/
+
+# Aider
+.aider*
+.aiderignore
+
+# Continue.dev
+.continuerc.json
+.continuerules
+.continue/
+
+# Amp (Sourcegraph)
+AGENT.md
+.amp/
+
+# Cody (Sourcegraph)
+.cody/
+
+# Amazon Q Developer
+.amazonq/
+
+# Devin
+.devin/
+
+# Tabnine
+TABNINE.md
+.tabnine/
+
+# Trae (ByteDance)
+.trae/
+
+# Bolt.new
+.boltrules
+.bolt/
+
+# Lovable
+.lovable/
+
+# OpenCode
+opencode.json
+opencode.jsonc
+.opencode/
+
+# Sweep AI
+sweep.yaml
+SWEEP.md
+
+# Qodo / Codium
+.codiumai.toml
+.pr_agent.toml
+QODO.MD
+
+# Zed
+.zed/
+
+# Google IDX / Firebase Studio
+.idx/
+
+# Replit
+.replit
+.replit/
+
+# Mentat
+.mentat/
+
+# Supermaven (no project files, but just in case)
+.supermaven/
+
